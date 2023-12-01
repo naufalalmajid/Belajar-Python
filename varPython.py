@@ -11,3 +11,8 @@ y = "we build dream"  #it is string variable
 a = str(5)            #it is 5 but as string variable
 b = int(5)            #it is 5 but as integer variable
 c = float(9)          #it is 9 but as float or decimal variable 
+
+#in case you want know what type variable use type
+print(type(a))
+
+#variable is case sensitive

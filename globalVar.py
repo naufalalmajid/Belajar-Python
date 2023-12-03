@@ -27,4 +27,5 @@ def myfunc2():
 
 
 myfunc2()
+#variable a will replaced by global variable
 print(a + "rajin belajar")

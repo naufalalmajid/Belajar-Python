@@ -1,7 +1,11 @@
 #some types of data in python
 """
 text type/string = str
-numeric type = int (for integer value), float (for decimal), complex (for complex)
+numeric types = int (for integer value), float (for decimal), complex (for complex)
 sequence types = list (mutable, square brackets []), tuple (immutable,parentheses ()), range (sequence immutable, for looping)
-
-
+mapping type = dict
+set types  = set (), frozenset ()
+boolean type = bool ()
+binary types = bytes (), bytearray(), memoryview()
+none type = None ()
+"""

@@ -16,6 +16,15 @@ print(type(a))
 print(type(b))
 print(type(c))
 
+# for float, we can use e or E as exponential power of ten
+
+d = 28e3 # meaning 28 x 1000
+e = 28000
+
+# lets chech what e is power of ten 
+if d == e:
+    print(True)
+
 # complex, for any complex values
 
 j = 5j

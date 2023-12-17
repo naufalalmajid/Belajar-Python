@@ -1,0 +1,11 @@
+we can using this to insert illegal characters in string, called escape characters
+
+\'	Single Quote	
+\\	Backslash	
+\n	New Line	
+\r	Carriage Return	
+\t	Tab	
+\b	Backspace	
+\f	Form Feed	
+\ooo	Octal value	
+\xhh	Hex value	

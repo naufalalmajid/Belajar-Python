@@ -7,17 +7,18 @@ print(whatsmyCar)
 modelmyCar = myCar.get("model")
 print(modelmyCar)
 
-# by using keys will return a list of all the keys in the dictionary
+# by using keys() it will be return a list of all the keys in the dictionary
 itsmyCar = myCar.keys()
 print(itsmyCar)
 
 # make new updates in dict
-myCar["color"]: "Red"
+myCar["color"] = "Red"
 print(itsmyCar)
 
+# we can using values() it will be return a list of all the values in the dictionary
 favoritemyCar = myCar.values()
 print(favoritemyCar)
 
-#make new updates in dict
-myCar["engine"]: "2.0 L"
+#  make new updates in dict
+myCar["engine"] = "2.0 L"
 print(favoritemyCar)

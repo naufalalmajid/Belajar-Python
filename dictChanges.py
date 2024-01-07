@@ -7,5 +7,5 @@ myCar["year"] = 2023
 print(myCar)
 
 # or we can using update() method,  which it will be update items by argument (dictionary too) or an iterable object with key:values
-myCar.update({"type": "Diesel"})
+myCar.update({"model": "Ranger Raptor XLT"})
 print(myCar)

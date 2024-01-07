@@ -22,3 +22,11 @@ print(favoritemyCar)
 #  make new updates in dict
 myCar["engine"] = "2.0 L"
 print(favoritemyCar)
+
+# we can using items() for return a list of all key and values in the dictionary
+justmyCar = myCar.items()
+print(justmyCar)
+
+# and we can check if some key available in dictionary
+if "engine" in myCar:
+    print("Yes, myCar have engine")

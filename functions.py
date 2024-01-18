@@ -48,3 +48,30 @@ my_family_cars(
     cars4="Lamborghini Urus",
 )
 
+
+# arbitrary keywords arguments, in case we dont know how much keyword arguments we can using two asterisk **
+def my_special(**special):
+    print("the car i like is " + special["toyota"])
+
+
+my_special(toyota="Toyota GR 86", nissan="Nissan GTR R34")
+
+
+# default parameter value, used when we call the function without parameter value
+def my_brands(carbrands="Toyota"):
+    print("my car brand is" + carbrands)
+
+
+my_brands()
+my_brands("Mitsubishi")
+my_brands("Ford")
+
+
+# passing a list as an argument, we can send any data types to function
+def my_carbrands(mycarbrands):
+    for x in mycarbrands:
+        print(x)
+
+
+mycar = ["Toyota", "Ford", "Mitsubishi", "Isuzu"]
+my_carbrands(mycar)

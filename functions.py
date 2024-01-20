@@ -59,7 +59,7 @@ my_special(toyota="Toyota GR 86", nissan="Nissan GTR R34")
 
 # default parameter value, used when we call the function without parameter value
 def my_brands(carbrands="Toyota"):
-    print("my car brand is" + carbrands)
+    print("my car brand is " + carbrands)
 
 
 my_brands()
@@ -75,3 +75,37 @@ def my_carbrands(mycarbrands):
 
 mycar = ["Toyota", "Ford", "Mitsubishi", "Isuzu"]
 my_carbrands(mycar)
+
+
+# return values, is used for function return values
+def my_fuel(diesel):
+    return 6500 * diesel
+
+
+print(my_fuel(50))
+print(my_fuel(60))
+
+
+# pass statements is used for pass because the functions cannot empty
+def my_fuels():
+    pass
+
+
+# positional-only arguments, we can make positional-only arguments by using , / after arguments
+def my_fuels_consumption(diesel, /):
+    print(diesel * 6500)
+
+
+my_fuels_consumption(20)
+
+
+# keyword-only arguments, we can make keyword-only arguments by using *, before arguments
+def my_fuels_consumptions(*, dexlite):
+    print(dexlite * 14900)
+
+
+my_fuels_consumptions(dexlite=20)
+
+# combine positional-only arguments with keyword-only arguments, we can using ,/ for 
+
+# recursionwq

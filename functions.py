@@ -106,6 +106,6 @@ def my_fuels_consumptions(*, dexlite):
 
 my_fuels_consumptions(dexlite=20)
 
-# combine positional-only arguments with keyword-only arguments, we can using ,/ for 
+# combine positional-only arguments with keyword-only arguments, we can using , / after positional-only arguments and using *, befor keyword-only arguments
 
 # recursionwq

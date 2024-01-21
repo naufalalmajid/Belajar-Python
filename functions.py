@@ -106,6 +106,24 @@ def my_fuels_consumptions(*, dexlite):
 
 my_fuels_consumptions(dexlite=20)
 
-# combine positional-only arguments with keyword-only arguments, we can using , / after positional-only arguments and using *, befor keyword-only arguments
 
-# recursionwq
+# combine positional-only arguments with keyword-only arguments, we can using , / after positional-only arguments and using *, before keyword-only arguments
+def fuels(biosolar, /, *, dexlite, dex):
+    print("price: ", biosolar, dexlite, dex)
+
+
+fuels(6500, dexlite=14900, dex=15450)
+
+
+# recursion, python is support recursion function
+def recursion(yxz):
+    if yxz > 0:
+        result = yxz + recursion(yxz - 2)
+        print(result)
+    else:
+        result = 0
+    return result
+
+
+print("\nRecursion Example Results")
+recursion(6)

@@ -27,11 +27,64 @@ class DailyCar(Car):
 dailycar1 = DailyCar("Toyota", "Hilux Dcab 4x4")
 dailycar1.mycar()
 
-# we can add the __init__() function to the child class, the __init__() function called automatically 
 
-# use the super() function
+# we can add the __init__() function to the child class, the __init__() function called automatically
+# __init__() function overrides the inheritance of the parents __init__() function
+class Race:
+    def __init__(racer, type, engine):
+        racer.type = type
+        racer.engine = engine
+
+    def myRacer(racer):
+        print(racer.type, racer.engine)
+
+
+class myrace(Race):
+    def __init__(racer, type, engine):
+        Race.__init__(racer, type, engine)
+
+
+race1 = myrace("Nissan GTR R34", "Gasoline")
+race1.myRacer()
+
+
+# use the super() function, for inherit all methods and properties from parents class
+class mydayrace(Race):
+    def __init__(racer, type, engine):
+        super().__init__(type, engine)
+
+
+mydayrace1 = myrace("Toyota 86", "Gasoline")
+mydayrace1.myRacer()
+
 
 # add properties
+class mydayraces(Race):
+    def __init__(racer, type, engine, year):
+        super().__init__(type, engine)
+        racer.year = year
+
+
+races1 = mydayraces("Toyota 86", "Gasoline", "2023")
+races1.myRacer()
+
 
 # add methods
+class mydayracing(Race):
+    def __init__(racer, type, engine, years):
+        super().__init__(type, engine)
+        racer.years = years
 
+    def printracing(racer):
+        print(
+            "my favorite race car is: ",
+            racer.type,
+            "with engine ",
+            racer.engine,
+            "manufactured at ",
+            racer.years,
+        )
+
+
+mydayracing1 = mydayracing("Toyota 86", "Gasoline", 2023)
+mydayracing1.printracing()

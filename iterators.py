@@ -27,4 +27,50 @@ myCarBrands = ("BMW", "Ford", "Isuzu", "Mitsubishi", "Toyota")
 for brands in myCarBrands:
     print(brands)
 
-# creating an iterator object, using __iter__()
+# creating an iterator object, by using __iter__() you can do operations (initializing etc.), but must always return the iterator object itself.
+# __next__() method also allows you to do operations, and must return the next item in the sequence.
+
+
+class myCounting:
+    def __iter__(self):
+        self.count = 2
+        return self
+
+    def __next__(self):
+        counting = self.count
+        self.count += 2
+        return counting
+
+
+myCount = myCounting()
+myIters = iter(myCount)
+
+print(next(myIters))
+print(next(myIters))
+print(next(myIters))
+print(next(myIters))
+print(next(myIters))
+
+print("next counting")
+
+
+# stopieration, to prevent the iteration from going on forever, we can using StopIteration statement.
+class myCalc:
+    def __iter__(self):
+        self.calc = 2
+        return self
+
+    def __next__(self):
+        if self.calc <= 28:
+            y = self.calc
+            self.calc += 2
+            return y
+        else:
+            raise StopIteration
+
+
+myCalculation = myCalc()
+myCalcs = iter(myCalculation)
+
+for yxz in myCalcs:
+    print(yxz)

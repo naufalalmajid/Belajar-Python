@@ -47,5 +47,36 @@ for yxz in (Toyota1, Mitsubishi1, Ford1):
     print(yxz.series, yxz.engine)
     yxz.product()
 
-# inheritance class polymorphism
 
+# inheritance class polymorphism
+class Car:
+    def __init__(self, type, years):
+        self.type = type
+        self.years = years
+
+    def manufactured(self):
+        print("Japan")
+
+
+class myToyota(Car):
+    pass
+
+
+class myFord(Car):
+    def manufactured(self):
+        print("US")
+
+
+class myVolvo(Car):
+    def manufactured(self):
+        print("Sweden")
+
+
+myToyota1 = myToyota("Hilux DCab 4x4", 2023)
+myFord1 = myFord("Ranger Raptor XLT", 2022)
+myVolvo1 = myVolvo("XC90 Recharge", 2024)
+
+for myCars in (myToyota1, myFord1, myVolvo1):
+    print(myCars.type)
+    print(myCars.years)
+    myCars.manufactured()

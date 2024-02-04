@@ -36,5 +36,11 @@ print(y)
 
 
 # using the dir() function
+import platform
 
-# import from modules, we can
+z = dir(platform)
+print(z)
+# import from modules, we can choose only parts by using from keyword
+from imports import toyota
+
+print(toyota["engine"])

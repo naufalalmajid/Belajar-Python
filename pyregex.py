@@ -9,3 +9,11 @@ if find:
     print("alma always trying to be better everyday")
 else:
     print("alma always same with yesterday")
+
+# the findall() function
+findTrying = re.findall("trying", daily)
+print(findTrying)
+
+# the search() function
+findAlma = re.search("alma", daily)
+print(findAlma)
